@@ -1,0 +1,50 @@
+/**
+ * Mixins
+ * Placeholder
+ */
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder { /* Firefox 18- */
+        @content;
+    }
+
+    &::-moz-placeholder {  /* Firefox 19+ */
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+@mixin font( $fs, $fw, $c, $lh, $ls, $tt){
+    font-size: $fs;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+    letter-spacing: $ls;
+    text-transform: $tt;
+}
+
+@mixin flex($jc, $ai, $fw, $fd){
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-wrap: $fw;
+    flex-direction: $fd;
+}
+@mixin transition($tp, $td, $ttf){
+    transition-property: $tp;
+    transition-duration: $td;
+    transition-timing-function: $ttf;
+}
+
+@mixin fontContent {
+    font-family: $font-content;
+    font-weight: 400;
+}
+@mixin fontTitle {
+    font-family: $font-title;
+}

@@ -1,0 +1,40 @@
+.header {
+
+  &__row {
+    &-nav {
+      > ul {
+        display: flex;
+        justify-content: space-between;
+        > li {
+
+        }
+      }
+    }
+  }
+
+  .megamenu {
+
+    &-item {
+      > a {
+        img {
+          object-fit: cover;
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+
+    > li {
+
+    }
+    &-col {
+      &-2 {
+        columns: 2;
+      }
+      &-4 {
+        columns: 4;
+      }
+    }
+  }
+
+}

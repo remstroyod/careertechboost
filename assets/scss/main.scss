@@ -1,0 +1,11 @@
+@import url('../js/src/vendor/bootstrap/bootstrap.min.css');
+
+// Base
+@import "base/variables";
+@import "base/mixins";
+@import "base/mixins-media";
+@import "base/base";
+
+// Sections
+@import "sections/header";
+@import "sections/footer";
